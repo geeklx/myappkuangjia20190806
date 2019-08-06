@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300mm"
+    android:layout_height="300mm"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--<com.example.slbappcomm.uploadimg.view.UploadImgCircleImageView-->
+    <!--android:id="@+id/iv1"-->
+    <!--android:layout_width="180mm"-->
+    <!--android:layout_height="180mm"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:scaleType="centerCrop" />-->
+    <com.geek.libglide47.base.GlideImageView
+        android:id="@+id/iv1"
+        android:layout_width="180mm"
+        android:layout_height="180mm"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        app:siv_border_color="@color/white"
+        app:siv_border_width="0dp"
+        app:siv_pressed_alpha="0.3"
+        app:siv_pressed_color="@color/white"
+        app:siv_shape_type="circle" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12mm"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="测试"
+        android:textColor="@color/white"
+        android:textSize="14mm"
+        android:visibility="visible" />
+</RelativeLayout>
+

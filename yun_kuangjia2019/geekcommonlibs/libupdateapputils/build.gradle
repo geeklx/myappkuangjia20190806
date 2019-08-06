@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation project(':geeklibs:libutils')
+    implementation project(':geekcommonlibs:librararyforfileprovdider')
+
+    implementation 'com.liulishuo.filedownloader:library:1.6.8'
+
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/tina01"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina02"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina03"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina04"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina05"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina06"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina07"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina08"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina09"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina10"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina11"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina12"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina13"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina14"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina15"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina16"
+        android:duration="71" />
+    <item
+        android:drawable="@drawable/tina17"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina18"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina19"
+        android:duration="91" />
+    <item
+        android:drawable="@drawable/tina20"
+        android:duration="91" />
+</animation-list>

@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.fastJson
+    implementation librarys.okhttpVersion
+    implementation librarys.okioVersion
+
+//    implementation(name: 'libutils', ext: 'aar')
+    implementation project(':geeklibs:libutils')
+}

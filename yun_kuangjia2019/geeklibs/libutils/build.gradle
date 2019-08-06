@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+
+    implementation librarys.fastJson
+
+    api 'com.blankj:utilcode:1.22.10'
+}

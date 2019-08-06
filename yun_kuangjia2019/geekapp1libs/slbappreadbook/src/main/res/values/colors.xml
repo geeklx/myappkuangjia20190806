@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02A8F3</color>
+    <color name="colorPrimaryDark">#2095F2</color>
+    <color name="colorAccent">#02A8F3</color>
+    <color name="red">#F34235</color>
+
+    <color name="blue">#2095F2</color>
+
+    <color name="yellow">#FEC006</color>
+
+    <color name="gray">#D0D0D0</color>
+    <color name="gray_dark">#303030</color>
+
+    <!--覆层-->
+
+    <!--渐变-->
+
+    <color name="color8BC8FF">#8BC8FF</color>
+    <color name="color3495F8">#3495F8</color>
+    <color name="colorB6DDFF">#B6DDFF</color>
+
+</resources>

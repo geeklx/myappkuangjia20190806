@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slb_medal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33mm">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10mm"
+            android:background="@drawable/slb_left_back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的勋章"
+            android:textColor="@color/white"
+            android:textSize="20mm"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/empty_view_demo" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20mm"
+            android:layout_marginRight="10mm">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="530mm"
+                android:layout_marginTop="24mm"
+                android:background="@drawable/slb_medal_viewpager">
+
+                <com.example.slbappusercenter.widgets.MedalCoolViewPager
+                    android:id="@+id/medalcoolviewpager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12mm"
+                    android:layout_marginRight="30mm"
+                    android:layout_marginBottom="30mm" />
+
+                <com.example.slbappusercenter.widgets.CustomIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="20mm"
+                    android:layout_marginBottom="50mm"
+                    app:indicatorMarginLeft="10mm"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="@id/medalcoolviewpager1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview1"
+                android:layout_width="wrap_content"
+                android:layout_height="55mm"
+                android:layout_marginLeft="20mm"
+                android:layout_marginTop="7.5mm"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

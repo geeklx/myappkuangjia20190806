@@ -1,0 +1,64 @@
+include ':app'
+
+// start aar
+include ':libsCenter', ':biz-libs'
+//end aar
+
+// start bi3
+include ':biz3',
+        ':biz3:biz3-slbapp-demo1',
+        ':biz3:biz3slbappshouye',
+        ':biz3:biz3slbapporder',
+        ':biz3:biz3slbappcomm',
+        ':biz3:biz3slbappusercenter'
+// end biz3
+
+// start other libs
+include ':otherlibs',
+        ':otherlibs:jiaozivideoplayer',
+        ':otherlibs:imagepicker',
+        ':otherlibs:libraryglide37sinayulan',
+        ':otherlibs:libgreendao',
+        ':otherlibs:smartrefreshlayout:refresh-footer',
+        ':otherlibs:smartrefreshlayout:refresh-header',
+        ':otherlibs:smartrefreshlayout:refresh-layout'
+//end other libs
+
+// start commonlibs
+include ':baselibrary'
+include ':geeklibs',
+        ':geeklibs:libutils',
+        ':geeklibs:libwebview',
+        ':geeklibs:slbappcomm',
+        ':geeklibs:slbappshare',
+        ':geeklibs:slbappstatistics',
+        ':geeklibs:slbappumengstatistics',
+        ':geeklibs:slbappjpush',
+        ':geeklibs:slbapppay'
+
+include ':geekcommonlibs',
+        ':geekcommonlibs:libglin',
+        ':geekcommonlibs:libglide37',
+        ':geekcommonlibs:libglide47',
+        ':geekcommonlibs:libretrofit',
+        ':geekcommonlibs:libvariants',
+        ':geekcommonlibs:librararyforfileprovdider',
+        ':geekcommonlibs:libupdateapputils',
+        ':geekcommonlibs:libmvp'
+// end commonlibs
+
+//slbappone start
+
+include ':geekapp1libs',
+        ':geekapp1libs:geekapp1',
+        ':geekapp1libs:demolibs1',
+        ':geekapp1libs:slbappindex',
+        ':geekapp1libs:slbappsplash',
+        ':geekapp1libs:slbapplogin',
+        ':geekapp1libs:slbappreadbook',
+        ':geekapp1libs:slbappxmly',
+        ':geekapp1libs:slbappusercenter',
+        ':geekapp1libs:slbapplistenbook'
+
+//slbappone end
+

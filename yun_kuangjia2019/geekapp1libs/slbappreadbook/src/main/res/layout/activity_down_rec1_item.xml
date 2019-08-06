@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="-20mm"
+    android:background="@drawable/icon_last_holder"
+    android:clipChildren="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/item_bg"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120mm"
+        android:layout_gravity="center">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/brademo1_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/animation_img1" />
+
+        <TextView
+            android:id="@+id/brademo1_tweetName"
+            style="@style/tweetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brademo1_img"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="Chad"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/brademo1_tweetText"
+            style="@style/tweetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brademo1_tweetName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="Hello world!"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/brademo1_tweetDate"
+            style="@style/tweetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/brademo1_tweetName"
+            android:layout_alignBottom="@+id/brademo1_tweetName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_10"
+            android:text="04/06/13"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_delss"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/children_lock_close"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:src="@drawable/bg_book_shelf_charge9" />-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

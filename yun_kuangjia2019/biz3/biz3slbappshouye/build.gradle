@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply from: '../../assemble_dolast.gradle'
+apply from: './../../commonlibsdiff.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.fastJson
+
+    implementation(name:'libmvp', ext:'aar')
+    implementation project(':geeklibs:libutils')
+    implementation project(':geekcommonlibs:libretrofit')
+
+    bxnt_nationImplementation(name: 'libvariants_bxnt_nation', ext: 'aar')
+    bxny_nationImplementation(name: 'libvariants_bxny_nation', ext: 'aar')
+    bxn_nationImplementation(name: 'libvariants_bxn_nation', ext: 'aar')
+
+
+}

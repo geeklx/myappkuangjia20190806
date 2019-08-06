@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'//GreenDao
+
+greendao {
+    //数据库的schema版本，也可以理解为数据库版本号
+    schemaVersion 1
+    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+    daoPackage 'com.haier.greendao.autoputgreendao'
+    //设置DaoMaster、DaoSession、Dao目录
+    targetGenDir 'src/main/java'
+}
+
+//buildscript {
+//    repositories {
+//        google()
+//        jcenter()
+//        mavenCentral()
+//        maven {
+//            url "https://maven.google.com"
+//        }
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.4.2'
+//        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+//    }
+//}
+apply from: './../../commonlibs.gradle'
+def librarys = rootProject.ext.dependencies //依赖
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+}

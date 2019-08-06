@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+//    implementation librarys.percent
+    // glide47
+    implementation librarys.glide47
+    implementation librarys.glide47AnnProcessor
+    annotationProcessor librarys.annotationProcessorglide47compiler
+    implementation librarys.glide47okhttp3integration
+    implementation librarys.photoView
+    //解决Glide找不到Android声明库问题
+    annotationProcessor 'androidx.annotation:annotation:1.0.0'
+    //
+    implementation 'com.lxj:xpermission:1.0.0'
+
+//    implementation(name: 'libutils', ext: 'aar')
+    implementation project(':geeklibs:libutils')
+}

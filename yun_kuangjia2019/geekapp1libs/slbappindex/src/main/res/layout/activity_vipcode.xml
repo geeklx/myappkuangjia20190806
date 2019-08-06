@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slb_activity_mqh_fragment4_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30mm">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="40mm"
+                android:layout_height="40mm"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10mm"
+                android:background="@drawable/slb_left_back2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="兑换码激活"
+                android:textColor="@color/white"
+                android:textSize="20mm" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150mm"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="250mm"
+                android:layout_height="54mm"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/slb_vipcode_edbg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt1"
+                    style="@style/logincontentedit"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20mm"
+                    android:layout_marginTop="6mm"
+                    android:hint="请输入兑换码"
+                    android:inputType="text"
+                    android:maxLength="11"
+                    android:padding="@dimen/x10"
+                    android:textSize="16mm" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="80mm"
+                android:layout_height="44mm"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/slb_vipcode_sure" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginLeft="20mm"
+            android:layout_marginTop="70mm"
+            android:layout_marginRight="20mm"
+            android:background="@drawable/bg_vipcode1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16mm"
+                android:text="兑换注意事项"
+                android:textColor="#1772BC"
+                android:textSize="18mm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10mm"
+                android:layout_marginTop="16mm"
+                android:drawableLeft="@drawable/slb_indicator2"
+                android:drawablePadding="10mm"
+                android:text="每位注册用户仅限兑换一次VIP激活码；"
+                android:textColor="#589FD9"
+                android:textSize="14mm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10mm"
+                android:layout_marginTop="16mm"
+                android:drawableLeft="@drawable/slb_indicator2"
+                android:drawablePadding="10mm"
+                android:text="该兑换码仅使用一次；"
+                android:textColor="#589FD9"
+                android:textSize="14mm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10mm"
+                android:layout_marginTop="16mm"
+                android:layout_marginBottom="16mm"
+                android:drawableLeft="@drawable/slb_indicator2"
+                android:drawablePadding="10mm"
+                android:text="一经兑换该兑换码即失效,兑换后无法转增他人。"
+                android:textColor="#589FD9"
+                android:textSize="14mm" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10mm"
+            android:text="本活动最终解释权归赛鲁班所有"
+            android:textColor="#8F96A2"
+            android:textSize="12mm" />
+    </RelativeLayout>
+
+</com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout>

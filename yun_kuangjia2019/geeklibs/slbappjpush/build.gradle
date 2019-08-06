@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+//apply from: '../../mobsdk.gradle'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //common url
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+
+    implementation files('../../otherjar/jcore-android-1.2.5.jar')
+    api files('../../otherjar/jpush-android-3.1.6.jar')
+//    implementation 'cn.jiguang.sdk:janalytics:1.1.1' //
+//    implementation 'cn.jiguang.sdk:jcore:1.2.5' //
+
+    //jar aar
+
+    //rep /**rep*/
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+}

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply from: './../commonlibs.gradle'
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    dataBinding {
+        enabled = true
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api librarys.design
+    api librarys.appcompatV7
+    api librarys.supportannotations
+    api librarys.recyclerviewv7
+    api librarys.cardviewv7
+    api librarys.nineoldandroids
+    api librarys.zxing
+    api librarys.fastJson
+    api librarys.gsonJson
+    api librarys.multidexVersion
+    api librarys.constraintlayout
+
+    api(name: 'hooklistenerlib', ext: 'aar')
+    api(name: 'libmvp', ext: 'aar')
+    api(name: 'libglin', ext: 'aar')
+    api project(':geeklibs:libutils')
+    api project(':geeklibs:libwebview')
+    api project(':geekcommonlibs:libretrofit')
+    // updateapk
+    api project(':geekcommonlibs:librararyforfileprovdider')
+    // three fang likebutton
+    api 'com.mikepenz:iconics-core:2.9.1@aar'
+    api 'com.mikepenz:community-material-typeface:1.8.36.1@aar'
+    // recycleviewgallery
+    api 'com.yarolegovich:mp:1.0.9'
+    // recycleview recycleviewmultitype
+    api 'me.drakeet.multitype:multitype:3.4.4'
+    // recycleviewalluses
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    api 'com.jaredrummler:material-spinner:1.2.5'
+    api 'com.kyleduo.switchbutton:library:2.0.0'
+    // expandableview
+    api 'com.drawthink:expandable-recyclerview:0.0.3'
+    // assetsfitandroid
+//    api 'com.blankj:utilcode:1.22.10'
+    // AutoEx
+    api 'com.github.BolexLiu.AutoEx:AutoEx-Lib-No-Op:v1.0.8'
+    // jiaozi
+//    api 'cn.jzvd:jiaozivideoplayer:6.3.1'
+    api project(':otherlibs:jiaozivideoplayer')
+    // https://github.com/HuanHaiLiuXin/CoolViewPager
+    api 'com.github.HuanHaiLiuXin:CoolViewPager:v1.0.0'
+    // lottie
+    api 'com.airbnb.android:lottie:2.5.5'
+    // eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+    // walle
+    api 'com.meituan.android.walle:library:1.1.6'
+
+}

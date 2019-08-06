@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibs.gradle'
+def librarys = rootProject.ext.dependencies //依赖
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+
+}
+
+//apply from: '../gradle/maven_push.gradle'

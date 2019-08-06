@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.appcompatV7
+
+    implementation project(':geeklibs:libutils')
+}

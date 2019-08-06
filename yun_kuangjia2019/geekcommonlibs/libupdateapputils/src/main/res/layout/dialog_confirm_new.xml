@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300mm"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent00">
+
+        <LinearLayout
+            android:layout_width="294mm"
+            android:layout_height="320mm"
+            android:layout_centerInParent="true"
+            android:background="@drawable/slb_sj32"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/dialog_confirm_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="120mm"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_xbbyzbh"
+                android:textColor="@color/text_black"
+                android:textSize="18mm" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/dialog_confirm_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24mm"
+                    android:layout_marginTop="12mm"
+                    android:layout_marginRight="24mm"
+                    android:layout_marginBottom="10mm"
+                    android:lineSpacingExtra="5mm"
+                    android:text=""
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="12mm" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44mm"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16mm"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/dialog_confirm_cancle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="@string/app_shaz"-->
+                <!--android:textColor="@color/text_light_blue"-->
+                <!--android:textSize="14sp" />-->
+
+                <TextView
+                    android:id="@+id/dialog_confirm_sure"
+                    android:layout_width="220mm"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_ljsj"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/app_lkaz"
+                    android:textColor="@color/colorwhiteFFFFFF"
+                    android:textSize="18mm" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_confirm_cancle"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10mm"
+            android:background="@drawable/slblogin_delete2" />
+    </RelativeLayout>
+
+</RelativeLayout>

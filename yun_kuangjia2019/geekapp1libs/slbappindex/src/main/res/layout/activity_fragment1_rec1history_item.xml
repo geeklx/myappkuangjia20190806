@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/card_view"--><!--android:layout_width="100mm"--><!--android:layout_height="120mm"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="5dp"--><!--android:layout_marginRight="5dp"--><!--android:layout_marginBottom="-20mm"--><!--android:clipChildren="true"--><!--android:foreground="?android:attr/selectableItemBackground"--><!--card_view:cardBackgroundColor="@color/item_bg"--><!--card_view:cardCornerRadius="8dp"--><!--card_view:cardElevation="6dp"--><!--card_view:contentPadding="0mm"--><!--card_view:cardPreventCornerOverlap="false"--><!--card_view:cardUseCompatPadding="true">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="62mm"
+    android:layout_height="72mm"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5mm"
+    android:layout_marginTop="10mm"
+    android:layout_marginRight="2mm"
+    android:layout_marginBottom="0mm"
+    android:background="@drawable/slb_books_yy1"
+    android:clipChildren="true">
+
+    <com.example.slbappcomm.widgets.CustomRoundAngleImageView
+        android:id="@+id/brademo1_img"
+        android:layout_width="56mm"
+        android:layout_height="72mm"
+        android:scaleType="centerCrop"
+        app:left_bottom_radius="0mm"
+        app:left_top_radius="0mm"
+        app:right_bottom_radius="10mm"
+        app:right_top_radius="10mm"
+        tools:src="@drawable/animation_img1" />
+
+    <ImageView
+        android:layout_width="6mm"
+        android:layout_height="72mm"
+        android:src="@drawable/slb_books_yy" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt1"
+            android:layout_width="20mm"
+            android:layout_height="20mm"
+            android:layout_marginTop="0mm" />
+        <!--android:src="@drawable/slb_bktt_icon"-->
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt2"
+            android:layout_width="14mm"
+            android:layout_height="8mm"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0mm"
+            android:layout_marginRight="6mm" />
+        <!--android:src="@drawable/slb_xm_icon"-->
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt3"
+            android:layout_width="20mm"
+            android:layout_height="20mm"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0mm" />
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt4"
+            android:layout_width="10mm"
+            android:layout_height="10mm"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="6mm"
+            android:layout_marginBottom="0mm" />
+        <!--android:src="@drawable/slb_vip_icon22"-->
+
+    </RelativeLayout>
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_bktt1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="2mm"-->
+    <!--android:src="@drawable/slb_bktt_icon"-->
+    <!--android:visibility="gone"-->
+    <!--tools:visibility="visible" />-->
+    <!--<com.geek.libglide47.base.GlideImageView-->
+    <!--android:id="@+id/brademo1_img"-->
+    <!--android:layout_width="96mm"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/animation_img1" />-->
+
+    <TextView
+        android:id="@+id/brademo1_tweetName"
+        style="@style/tweetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brademo1_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="Chad"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/brademo1_tweetText"
+        style="@style/tweetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brademo1_tweetName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="Hello world!"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/brademo1_tweetDate"
+        style="@style/tweetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/brademo1_tweetName"
+        android:layout_alignBottom="@+id/brademo1_tweetName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/dp_10"
+        android:text="04/06/13"
+        android:visibility="gone" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:src="@drawable/bg_book_shelf_charge9" />-->
+</RelativeLayout>
+
+    <!--</android.support.v7.widget.CardView>-->

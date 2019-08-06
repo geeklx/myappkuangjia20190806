@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/light_00000"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00001"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00002"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00003"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00004"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00005"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00006"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00007"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00008"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00009"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00010"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00011"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00012"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00013"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00014"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00015"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00016"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00017"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00018"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00019"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00020"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00021"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00022"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00023"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00024"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/light_00025"
+        android:duration="70" />
+</animation-list>

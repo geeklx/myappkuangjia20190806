@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+//apply from: '../../mobsdk.gradle'
+//def config = rootProject.ext
+//def librarys = rootProject.ext.dependencies
+//android {
+//    compileSdkVersion config.compileSdkVersion
+//    buildToolsVersion config.buildToolsVersion
+//    defaultConfig {
+//        minSdkVersion config.minSdkVersion
+//        targetSdkVersion config.targetSdkVersion
+//        versionCode config.versionCode
+//        versionName config.versionName
+//
+////        ndk {
+////            moduleName "aaaa,bbb"
+////            ldLibs "log", "z", "m", "android", "c"
+////            abiFilters "armeabi", "armeabi-v7a", "x86"
+////        }
+////        manifestPlaceholders = [
+//////                JSHARE_PKGNAME : applicationId,
+////                JPUSH_APPKEY : "5e7ed2ac59ab107e12531b5f", //
+////                JPUSH_CHANNEL : "developer-default", //
+////                TENCENT_APPID: "YIbPvONmBQBZUGaN",//
+////                FACEBOOK_APPID: "1847959632183996",//
+////        ]
+//        sourceSets.main {
+//            jni.srcDirs = []
+//            //LOCAL_LDFLAGS += -fuse-ld=bfd
+//            //jni.srcDirs 'src/main/jni'
+//            jniLibs.srcDir '../../otherjar'
+////            jniLibs.srcDirs = ['src/main/libs']
+//        }
+//
+//    }
+//    buildTypes {
+//        release {
+//
+//            minifyEnabled false
+////            zipAlignEnabled false
+////            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+//        }
+//    }
+//}
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //common url
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+    implementation librarys.glide47
+
+    implementation files('../../otherjar/jcore-android-1.2.5.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.3.1'
+//    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    api files('../../otherjar/jshare-android-1.6.1.jar')
+    implementation files('../../otherjar/jshare-facebook-android-1.6.1.jar')
+    implementation files('../../otherjar/jshare-jchatpro-android-1.6.1.jar')
+    implementation files('../../otherjar/jshare-qq-android-1.6.1.jar')
+    implementation files('../../otherjar/jshare-sina-android-1.6.1.jar')
+    implementation files('../../otherjar/jshare-twitter-android-1.6.1.jar')
+    api files('../../otherjar/jshare-wechat-android-1.6.1.jar')
+
+//    implementation 'cn.jiguang.sdk:jshare:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-qqmodel:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-wechatmodel:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-sinamodel:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-facebookmodel:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-twittermodel:1.6.1'  //
+//    implementation 'cn.jiguang.sdk:jshare-jchatpromodel:1.6.0'  //
+//    implementation 'cn.jiguang.sdk:jcore:1.2.5'  //
+
+    //jar aar
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+
+}

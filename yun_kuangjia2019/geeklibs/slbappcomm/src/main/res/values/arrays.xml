@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="light_anim">
+        <item>@drawable/light_00000</item>
+        <item>@drawable/light_00001</item>
+        <item>@drawable/light_00002</item>
+        <item>@drawable/light_00003</item>
+        <item>@drawable/light_00004</item>
+        <item>@drawable/light_00005</item>
+        <item>@drawable/light_00006</item>
+        <item>@drawable/light_00007</item>
+        <item>@drawable/light_00008</item>
+        <item>@drawable/light_00009</item>
+        <item>@drawable/light_00011</item>
+        <item>@drawable/light_00012</item>
+        <item>@drawable/light_00013</item>
+        <item>@drawable/light_00014</item>
+        <item>@drawable/light_00015</item>
+        <item>@drawable/light_00016</item>
+        <item>@drawable/light_00017</item>
+        <item>@drawable/light_00018</item>
+        <item>@drawable/light_00019</item>
+        <item>@drawable/light_00020</item>
+        <item>@drawable/light_00021</item>
+        <item>@drawable/light_00022</item>
+        <item>@drawable/light_00023</item>
+        <item>@drawable/light_00024</item>
+        <item>@drawable/light_00025</item>
+    </string-array>
+</resources>

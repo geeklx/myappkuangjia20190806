@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext //
+def librarys = rootProject.ext.dependencies //
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        jumboMode = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            storeFile file('./../../firebox_keystore.jks')
+            keyAlias 'haier'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        debug {
+            storeFile file('./../../firebox_keystore.jks')
+            keyAlias 'haier'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        applicationId "com.sairobo.alty"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.appversionName
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        //javaCompileOptions
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        // Cmake
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+                abiFilters /*'armeabi',*/ 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+            }
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir './../../otherjar'
+        }
+
+    }
+    // CMakeLists.txt
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"  //
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // common
+    implementation project(':baselibrary')
+    // yewu
+//    implementation project(':geekapp1libs:demolibs1')
+    implementation project(':geeklibs:slbappcomm')
+    implementation project(':geekapp1libs:slbappindex')
+    implementation project(':geekapp1libs:slbappsplash')
+    implementation project(':geekapp1libs:slbapplogin')
+    implementation project(':geekapp1libs:slbappreadbook')
+    implementation project(':geekapp1libs:slbapplistenbook')
+    implementation project(':geekapp1libs:slbappusercenter')
+
+}
+
+//apply from: '../../mobsdk.gradle'
+// walle
+apply from: './multiple-channel.gradle'
+// tinker
+apply from: './tinker-support.gradle'

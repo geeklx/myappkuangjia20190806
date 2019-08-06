@@ -1,0 +1,168 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slbappcomm">
+
+    <!--<permission-->
+    <!--android:name="slb.Huyanservices"-->
+    <!--android:description="@string/app_name"-->
+    <!--android:label="@string/app_name"-->
+    <!--android:protectionLevel="normal" />-->
+    <!--需要硬件支持低功耗蓝牙-->
+    <uses-feature android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--Android 5.0以上蓝牙好需要位置权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="andriod.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="au.com.example.READ_CONTENT" />
+    <uses-permission android:name="au.com.example.WRITE_CONTENT" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--android 9.0上使用前台服务，需要添加权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--打电话广播-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!--监听电话状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".uploadimg.UploadImgMainActivity">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.UploadImgMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pop.bottompay.PaysuccessActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.PaysuccessActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uploadimg.ClipImageActivity"
+            android:theme="@style/Theme.ImagePreview" />
+        <activity
+            android:name=".pop.huodong.AdCommActivity"
+            android:theme="@style/ad_common_dialogstyle1">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.AdCommActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pop.huodong.AdCommImgActivity"
+            android:theme="@style/ad_common_dialogstyle1">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.AdCommImgActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".videoplay.VideoPlayActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.VideoPlayActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".videoplay.gsy.SimplePlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Full">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.SimplePlayer" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--饺子视频-->
+        <activity
+            android:name=".videoplay.jiaozi.JiaoZiVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Full">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.JiaoZiVideoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".videoplay.updateview.HrMemberActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.HrMemberActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".videoplay.quxiantu.QuxiantuActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.QuxiantuActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.slbappcomm.huyan.Huyanservices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.Huyanservices" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!--android:permission="slb.Huyanservices"-->
+        <!--android:process=":Huyanservices"-->
+        <service
+            android:name="com.example.slbappcomm.huyan.HuyanservicesBg"
+            android:exported="true" />
+
+        <service
+            android:name=".playermusic.ListenMusicPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".playermusic.ListenMusicPlayerServicesBg" />
+
+        <service
+            android:name=".videoplay.bt.BleService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".videoplay.bt.BleServicesBg"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".broadcastreceiver.PhoneBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <!--主动打电话时,发送的广播-->
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <!--电话状态改变时,发送的广播 (振铃,挂断,接通)-->
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".broadcastreceiver.PhoneService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".broadcastreceiver.PhoneServiceBg" />
+        <service
+            android:name=".services.UpdataCommonservices"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".services.UpdataCommonservicesBg" />
+
+    </application>
+</manifest>

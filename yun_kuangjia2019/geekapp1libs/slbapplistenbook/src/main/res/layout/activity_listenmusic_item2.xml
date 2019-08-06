@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="110mm"
+    android:layout_height="120mm">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="100mm"
+        android:layout_height="100mm"
+        android:layout_centerHorizontal="true">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slb_logo"
+            app:siv_border_color="@color/white"
+            app:siv_border_width="2mm"
+            app:siv_pressed_alpha="0.3"
+            app:siv_pressed_color="@color/white_alpha30"
+            app:siv_radius="4mm"
+            app:siv_shape_type="rectangle" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="50mm"
+            android:layout_height="50mm"
+            android:layout_centerInParent="true"
+            android:background="@drawable/slb_my_btn_comm_trans2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.geek.libglide47.base.GlideImageView
+                android:id="@+id/iv2"
+                android:layout_width="30mm"
+                android:layout_height="30mm"
+                android:src="@drawable/slb_vipsup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginLeft="5mm"
+        android:layout_marginTop="2mm"
+        android:layout_marginRight="5mm"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="1  测试"
+        android:textColor="@color/white"
+        android:textSize="10mm" />
+
+
+</RelativeLayout>

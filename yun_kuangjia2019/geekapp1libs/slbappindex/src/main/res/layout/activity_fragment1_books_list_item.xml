@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="118mm"
+    android:layout_height="174mm"
+    android:layout_marginTop="10mm"
+    android:layout_marginBottom="10mm">
+
+    <RelativeLayout
+        android:id="@+id/rl22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="144mm"
+            android:layout_centerHorizontal="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/item_bg"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="2mm"
+            tools:ignore="MissingDefaultResource">
+
+            <com.geek.libglide47.base.GlideImageView
+                android:id="@+id/brademo1_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0mm"
+                android:scaleType="centerCrop"
+                android:src="@drawable/animation_img1"
+                app:siv_border_color="@color/white"
+                app:siv_border_width="1dp"
+                app:siv_pressed_alpha="0.2"
+                app:siv_pressed_color="@color/white"
+                app:siv_radius="8dp"
+                app:siv_shape_type="rectangle" />
+            <!--<com.haier.cellarette.baselibrary.zothers.SimpleTagImageView-->
+            <!--android:id="@+id/brademo1_img"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/animation_img1"-->
+            <!--app:simple_tag_background_color="#00000000" />-->
+            <!--simple:simple_corner_distance="33dp"-->
+            <!--simple:simple_tag_background_color="#ff7900"-->
+            <!--simple:simple_tag_enable="true"-->
+            <!--simple:simple_tag_orientation="left_top"-->
+            <!--simple:simple_tag_text="一小时达"-->
+            <!--simple:simple_tag_textColor="#ffffff"-->
+            <!--simple:simple_tag_textSize="18sp"-->
+            <!--simple:simple_tag_width="23dip"-->
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl22"
+        android:layout_marginLeft="16mm"
+        android:layout_marginRight="16mm">
+
+        <TextView
+            android:id="@+id/brademo1_tweetName"
+            style="@style/tweetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2mm"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Chad"
+            android:textSize="14mm"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/brademo1_tweetText"
+            style="@style/tweetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brademo1_tweetName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="Hello world!"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/brademo1_tweetDate"
+            style="@style/tweetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/brademo1_tweetName"
+            android:layout_alignBottom="@+id/brademo1_tweetName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_10"
+            android:text="04/06/13"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt1"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:layout_marginLeft="1mm"
+            android:layout_marginTop="3mm" />
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt2"
+            android:layout_width="30mm"
+            android:layout_height="18mm"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4mm"
+            android:layout_marginRight="4mm" />
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt3"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3mm"
+            android:layout_marginBottom="34mm" />
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bktt4"
+            android:layout_width="30mm"
+            android:layout_height="30mm"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5mm"
+            android:layout_marginBottom="36mm" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_suo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50mm"
+        android:src="@drawable/slb_vipsup"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="40mm"
+        android:layout_height="40mm"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="2mm"
+        android:src="@drawable/children_lock_close"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_bktt1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="2mm"-->
+        <!--android:layout_marginTop="4mm"-->
+        <!--android:src="@drawable/slb_bktt_icon"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="visible" />-->
+
+</RelativeLayout>

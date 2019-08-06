@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_70">
+
+    <LinearLayout
+        android:id="@+id/ll_animation_view1"
+        android:layout_width="match_parent"
+        android:layout_height="0mm"
+        android:layout_marginTop="80mm"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/lightIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/light" />
+
+        <!--<com.airbnb.lottie.LottieAnimationView-->
+        <!--android:id="@+id/animation_view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--app:lottie_autoPlay="true"-->
+        <!--app:lottie_fileName="lottie/wings.json"-->
+        <!--app:lottie_loop="true" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/wing_transparent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/ll_animation_view1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_animation_view1">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/light"-->
+        <!--android:visibility="gone" />-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/wingLav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie/wings.json"
+            app:lottie_loop="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wingIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/wing_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/ll_animation_view1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_animation_view1" />
+
+    <RelativeLayout
+        android:id="@+id/rl22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/ll_animation_view1"
+        app:layout_constraintLeft_toLeftOf="@id/ll_animation_view1"
+        app:layout_constraintRight_toRightOf="@id/ll_animation_view1"
+        app:layout_constraintTop_toTopOf="@id/ll_animation_view1">
+
+        <ImageView
+            android:id="@+id/medalIv"
+            android:layout_width="192mm"
+            android:layout_height="216mm"
+            android:layout_centerInParent="true" />
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/centerIv"
+            android:layout_width="162mm"
+            android:layout_height="162mm"
+            android:layout_centerInParent="true"
+            app:siv_border_color="@color/white"
+            app:siv_border_width="0mm"
+            app:siv_pressed_alpha="0"
+            app:siv_pressed_color="@color/white_alpha30"
+            app:siv_shape_type="circle" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/medalNameTv"
+        style="@style/WrapWrap"
+        android:layout_marginTop="20mm"
+        android:textColor="@color/white"
+        android:textSize="20mm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_animation_view1" />
+
+    <TextView
+        android:id="@+id/detailTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30mm"
+        android:layout_marginTop="48mm"
+        android:layout_marginRight="30mm"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4mm"
+        android:textColor="@color/white"
+        android:textSize="16mm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl22" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        style="@style/WrapWrap"
+        android:layout_marginTop="22mm"
+        android:textColor="@color/white"
+        android:textSize="16mm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailTv" />
+
+    <TextView
+        android:id="@+id/btnTv"
+        android:layout_width="228mm"
+        android:layout_height="54mm"
+        android:layout_marginTop="25mm"
+        android:background="@drawable/bg_share_btn"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16mm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
