@@ -93,6 +93,9 @@ D:\githubproject\yun_kuangjia2019\geekapp1libs\geekapp1\build.gradle
 
 # 29.支持LottieAnimationView：全局搜索：LottieAnimationView
 
+# 30.支持喜马拉雅SDK：
+D:\githubproject\github_mykuangjia\20190806\myappkuangjia20190806\yun_kuangjia2019\geekapp1libs\slbappxmly
+
 # 附：打版方式：
 APP打版步骤：
 1.切换publish_config下的0 1 2 ：
