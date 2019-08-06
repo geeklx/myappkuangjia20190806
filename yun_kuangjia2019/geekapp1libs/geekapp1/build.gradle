@@ -96,14 +96,14 @@ dependencies {
     // common
     implementation project(':baselibrary')
     // yewu
-//    implementation project(':geekapp1libs:demolibs1')
+    implementation project(':geekapp1libs:demolibs1')
     implementation project(':geeklibs:slbappcomm')
-    implementation project(':geekapp1libs:slbappindex')
-    implementation project(':geekapp1libs:slbappsplash')
-    implementation project(':geekapp1libs:slbapplogin')
-    implementation project(':geekapp1libs:slbappreadbook')
-    implementation project(':geekapp1libs:slbapplistenbook')
-    implementation project(':geekapp1libs:slbappusercenter')
+    // implementation project(':geekapp1libs:slbappindex')
+    // implementation project(':geekapp1libs:slbappsplash')
+    // implementation project(':geekapp1libs:slbapplogin')
+    // implementation project(':geekapp1libs:slbappreadbook')
+    // implementation project(':geekapp1libs:slbapplistenbook')
+    // implementation project(':geekapp1libs:slbappusercenter')
 
 }
 
