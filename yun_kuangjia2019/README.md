@@ -6,72 +6,94 @@
 
 # 另外新增：支持androidx，版本号到最新：28  28.0.3  3.4.2  5.1.1
 
-1.支持美团walle多渠道，不会的看地址：https://www.jianshu.com/p/c516cf9138ea
+# 1.支持美团walle多渠道
+不会的看地址：https://www.jianshu.com/p/c516cf9138ea
 地址：https://blog.csdn.net/yinxing2008/article/details/82588075
 
-2.支持tinker1.9.3.2多渠道热修复，不会的看地址：http://v.qq.com/vplus/bugly
+# 2.支持tinker1.9.3.2多渠道热修复
+不会的看地址：http://v.qq.com/vplus/bugly
 
-3.支持护眼模式：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\huyan
+# 3.支持护眼模式：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\huyan
 
-4.支持类网易云播放器后台保活：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\playermusic
+# 4.支持类网易云播放器后台保活：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\playermusic
 
-5.支持HIOS3.0版本，支持scheme协议，不会的参考地址：https://www.cnblogs.com/whoislcj/p/5825333.html
+# 5.支持HIOS3.0版本，支持scheme协议
+不会的参考地址：https://www.cnblogs.com/whoislcj/p/5825333.html
 地址：https://www.jianshu.com/p/57f79fc83233
 地址：https://www.cnblogs.com/zhang-cb/p/7093769.html
 地址：https://blog.csdn.net/cheng545/article/details/80099137
 地址：https://www.cnblogs.com/whoislcj/p/5825333.html
 
-6.支持电话，第三方语音视频打断音乐：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\broadcastreceiver
+# 6.支持电话，第三方语音视频打断音乐：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\broadcastreceiver
 
-7.支持打分星星和半星：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\ratingstarview
+# 7.支持打分星星和半星：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\ratingstarview
 
-8.支持一行集成支付宝，微信，银联支付：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\pop\bottompay
+# 8.支持一行集成支付宝，微信，银联支付：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\pop\bottompay
 
-9.支持一行分享到第三方：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\pop\share
+# 9.支持一行分享到第三方：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\pop\share
 
-10.支持截长图到bitmap：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\utils\cutimg\ShareBitmapUtils.java
+# 10.支持截长图到bitmap：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\utils\cutimg\ShareBitmapUtils.java
 
-11.支持蓝牙传输数据交互：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\bt
+# 11.支持蓝牙传输数据交互：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\bt
 
-12.支持GSY播放器：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\gsy
+# 12.支持GSY播放器：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\gsy
 
-13.支持饺子播放器：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\jiaozi
+# 13.支持饺子播放器：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\jiaozi
 附：全局搜索查看demo用法：JZVideoPlayerStandard
 
-14.支持XCL-Charts曲线图：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\quxiantu
+# 14.支持XCL-Charts曲线图：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\videoplay\quxiantu
 
-15.支持EvenBus（全局搜索：EventBus.getDefault()）
+# 15.支持EvenBus（全局搜索：EventBus.getDefault()）
 
-16.支持LxCoolViewPager：优化100页卡顿，滑动翻书效果
+# 16.支持LxCoolViewPager：优化100页卡顿，滑动翻书效果
 附：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\viewpager\LxCoolViewPager.java
 
-17.支持打字效果：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\dazi
+# 17.支持打字效果：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\dazi
 
-18.支持图片懒加载：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\recyclerviewnice\XRecyclerView.java
+# 18.支持图片懒加载：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\recyclerviewnice\XRecyclerView.java
 
-19.支持图片四个角圆形自定义：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\CustomRoundAngleImageView.java
+# 19.支持图片四个角圆形自定义：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\widgets\CustomRoundAngleImageView.java
 
-20.支持EasyPermission权限：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\base\EasyPermissionMainFragment.java
+# 20.支持EasyPermission权限：D:\githubproject\yun_kuangjia2019\geeklibs\slbappcomm\src\main\java\com\example\slbappcomm\base\EasyPermissionMainFragment.java
 
-21.支持自定义webview2.0：新增js退出交互操作D:\githubproject\yun_kuangjia2019\geeklibs\libwebview
+# 21.支持自定义webview2.0：新增js退出交互操作
+D:\githubproject\yun_kuangjia2019\geeklibs\libwebview
 
-22.支持一行jpush推送：D:\githubproject\yun_kuangjia2019\geeklibs\slbappjpush
+# 22.支持一行jpush推送：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappjpush
 
-23.支持一行jpush统计：D:\githubproject\yun_kuangjia2019\geeklibs\slbappstatistics
+# 23.支持一行jpush统计：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappstatistics
 
-24.支持一行Umeng统计：D:\githubproject\yun_kuangjia2019\geeklibs\slbappumengstatistics
+# 24.支持一行Umeng统计：
+D:\githubproject\yun_kuangjia2019\geeklibs\slbappumengstatistics
 
-25.支持Glide4.9.0：D:\githubproject\yun_kuangjia2019\geekcommonlibs\libglide47
+# 25.支持Glide4.9.0：
+D:\githubproject\yun_kuangjia2019\geekcommonlibs\libglide47
 
-26.支持自定义升级：D:\githubproject\yun_kuangjia2019\geekcommonlibs\libupdateapputils
+# 26.支持自定义升级：
+D:\githubproject\yun_kuangjia2019\geekcommonlibs\libupdateapputils
 
-27.支持bugly升级：https://github.com/BuglyDevTeam/Bugly-Android-Demo/issues
+# 27.支持bugly升级：
+https://github.com/BuglyDevTeam/Bugly-Android-Demo/issues
 
-28.支持Cmake最新NDK写法：D:\githubproject\yun_kuangjia2019\geekapp1libs\geekapp1\build.gradle
+# 28.支持Cmake最新NDK写法：
+D:\githubproject\yun_kuangjia2019\geekapp1libs\geekapp1\build.gradle
 
-29.支持LottieAnimationView：全局搜索：LottieAnimationView
+# 29.支持LottieAnimationView：全局搜索：LottieAnimationView
 
-附：打版方式：
+# 附：打版方式：
 APP打版步骤：
 1.切换publish_config下的0 1 2 ：
  defaultVariantIndex = 2
@@ -88,7 +110,7 @@ gradlew publishDefault或publish
 
 ### ![梁肖51CTO](https://wx1.sinaimg.cn/mw690/60d2c107ly1g5q12j1qb0j20em0ktjs2.jpg "梁肖51CTO")
 
-附demo用法
+# 附demo用法
 地址：https://github.com/geeklx/MyApplication
 地址：https://github.com/geeklx/myapplication2018
 
