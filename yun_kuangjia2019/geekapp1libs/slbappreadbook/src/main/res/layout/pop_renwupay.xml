@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clipChildren="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll23"
+        android:layout_width="328mm"
+        android:layout_height="440mm"
+        android:layout_centerInParent="true"
+        android:background="@drawable/slb_m_congratulation3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40mm"
+            android:layout_marginTop="140mm"
+            android:layout_marginRight="40mm"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/readbooks_tips1"
+            android:textColor="@color/color4F4B21"
+            android:textSize="16mm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20mm"
+            android:gravity="center">
+
+            <View
+                android:layout_width="78mm"
+                android:layout_height="10mm"
+                android:background="@drawable/slb_xuxian_comm"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24mm"
+                android:layout_marginRight="24mm"
+                android:text="奖励"
+                android:textColor="@color/colorF6A507"
+                android:textSize="20mm" />
+
+            <View
+                android:layout_width="78mm"
+                android:layout_height="10mm"
+                android:background="@drawable/slb_xuxian_comm"
+                android:layerType="software" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80mm"
+            android:layout_marginLeft="40mm"
+            android:layout_marginRight="40mm">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="210mm"
+            android:layout_height="44mm"
+            android:layout_marginTop="10mm"
+            android:background="@drawable/btn_readbook2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="60mm"
+        android:layout_height="60mm"
+        android:layout_above="@+id/ll23"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10mm"
+        android:layout_marginBottom="-140mm"
+        android:background="@drawable/slb_m_delete3"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

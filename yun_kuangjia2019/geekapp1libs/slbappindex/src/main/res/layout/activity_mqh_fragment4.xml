@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/parallax"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slb_activity_mqh_fragment4_bg" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0mm"
+        app:srlEnablePreviewInEditMode="false">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/smart_header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10mm"
+            android:visibility="visible"
+            app:layout_srlBackgroundColor="@color/transparent"
+            app:srlAccentColor="@color/white"
+            app:srlPrimaryColor="@color/transparent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="40mm"
+                        android:layout_height="40mm"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="24mm"
+                        android:layout_marginRight="14mm"
+                        android:src="@drawable/slb_activity_mqh_fragment4_setting" />
+
+                    <include layout="@layout/activity_mqh_fragment4_content" />
+
+                    <include layout="@layout/activity_mqh_fragment4_content2" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/SmartRefreshAppTheme.Toolbar"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+        <androidx.appcompat.widget.ButtonBarLayout
+            android:id="@+id/buttonBarLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.haier.cellarette.baselibrary.widget.CircleImageView
+                android:id="@+id/toolbar_avatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10mm"
+                android:layout_marginRight="10mm"
+                android:src="@drawable/slb_logo"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_overlay="true"
+                app:civ_border_width="2mm" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="一醉方休"
+                android:textSize="16sp" />
+        </androidx.appcompat.widget.ButtonBarLayout>
+    </androidx.appcompat.widget.Toolbar>
+</FrameLayout>

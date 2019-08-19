@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half_half_half"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="300mm"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50mm"
+        android:layout_marginRight="50mm"
+        android:background="@drawable/btn_common_blue">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_lottie1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_animation_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="lottie/done.json"
+                    app:lottie_loop="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_animation_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="lottie/giftbox.json"
+                    app:lottie_loop="true" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="50mm"
+        android:layout_height="50mm"
+        android:layout_above="@+id/rl1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30mm"
+        android:layout_marginBottom="-30mm"
+        android:src="@drawable/children_lock_close" />
+
+</RelativeLayout>

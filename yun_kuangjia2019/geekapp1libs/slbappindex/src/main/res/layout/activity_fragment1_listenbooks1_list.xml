@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E6F1FF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <!--color_11B5AF-->
+
+    <include layout="@layout/activity_common_top1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl123"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="true">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="false">
+
+            <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+            <!--android:id="@+id/smart_header1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_srlBackgroundColor="@color/color_E6F1FF"-->
+            <!--app:srlAccentColor="@color/color_4DA3FE"-->
+            <!--app:srlPrimaryColor="@color/transparent" />-->
+            <com.example.slbappindex.fragment.fragment1.tingshulistpart.listheader.ReFreshClassicsHeader
+                android:id="@+id/smart_header1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_srlBackgroundColor="@color/color_E6F1FF"
+                app:srlAccentColor="@color/color_4DA3FE"
+                app:srlPrimaryColor="@color/transparent" />
+
+            <com.example.slbappcomm.widgets.recyclerviewnice.XRecyclerView
+                android:id="@+id/recycler_view0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0mm"
+                android:layout_marginTop="0mm"
+                android:layout_marginRight="0mm" />
+            <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+            <!--android:id="@+id/smart_footer1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_srlBackgroundColor="@color/color_E6F1FF"-->
+            <!--app:srlAccentColor="@color/white"-->
+            <!--app:srlPrimaryColor="@color/color_E6F1FF" />-->
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </RelativeLayout>
+
+</LinearLayout>

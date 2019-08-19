@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">slbapp-index</string>
+    <string name="slb_my_tip1" translatable="false">护眼模式</string>
+    <string name="slb_my_tip2" translatable="false">开启护眼模式能让有效保护小朋友的眼睛哦</string>
+    <string name="slb_my_tip3" translatable="false">清除缓存</string>
+    <string name="slb_my_tip4" translatable="false">清除缩略图及其他缓存文件</string>
+    <string name="slb_my_tip5" translatable="false">修改资料</string>
+    <string name="slb_my_tip55" translatable="false">退出登录</string>
+    <string name="slb_my_tip555" translatable="false">登录</string>
+    <string name="slb_my_tip6" translatable="false">语言视频画面会随着重力感应而变化</string>
+    <string name="slb_my_tip9" translatable="false">检查更新</string>
+    <string name="slb_my_tip10" translatable="false">\t\t\t赛鲁班以“让每个孩子的潜能得到更完善的绽放”为初衷，集合人工智能、大数据、物联网科技，为教育行业提供更全面的高科技教育产品和解决方案的新型AI科技企业，总部座落于素有美丽天堂之称的杭州，聚集阿里巴巴、华为、三星等知名企业的核心领军人物携手北师大名师、中科院组成了强有力的教育研发团队，专为儿童打造全新的未来教育。</string>
+    <string name="slb_my_tip11" translatable="false">联系电话：0571-8872 5806 (工作日 9:00-18:00）\n商务合作：marketing@sairobo.com\n公司地址：杭州市余杭区文一西路1818号中国人工智能小镇6幢8楼</string>
+    <string name="rule_text" translatable="false">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+    <string name="slb_my_tip_fkzx_wtms" translatable="false" tools:ignore="ExtraTranslation">我们非常重视您的反馈，为了能够高效处理，请您尽可能详细的描述问题或宝贵建议，谢谢!</string>
+
+</resources>

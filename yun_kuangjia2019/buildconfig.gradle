@@ -21,13 +21,13 @@ ext {
 
     dependencies = [
             // ------------- Android -------------
-            supportV4            : "com.android.support:support-v4:28.0.0",
+            supportV4            : "androidx.legacy:legacy-support-v4:1.0.0",
             appcompatV7          : "androidx.appcompat:appcompat:1.0.0",
             supportannotations   : "androidx.annotation:annotation:1.0.0",
             design               : "com.google.android.material:material:1.0.0",
             cardviewv7           : "androidx.cardview:cardview:1.0.0",
             recyclerviewv7       : "androidx.recyclerview:recyclerview:1.0.0",
-            percent              : "com.android.support:percent:28.0.0",
+            percent              : "androidx.percentlayout:percentlayout:1.0.0",
             constraintlayout     : "androidx.constraintlayout:constraintlayout:1.1.3",
             multidexVersion      : "androidx.multidex:multidex:2.0.1",
 //            // ------------- Android -------------

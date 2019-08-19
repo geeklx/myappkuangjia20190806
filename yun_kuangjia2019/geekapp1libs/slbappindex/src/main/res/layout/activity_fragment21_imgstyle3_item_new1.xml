@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="166mm"
+    android:layout_height="224mm"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8mm"
+    android:layout_marginTop="8mm"
+    android:layout_marginRight="8mm"
+    android:layout_marginBottom="8mm"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/item_bg"
+    app:cardCornerRadius="8mm"
+    app:cardElevation="3mm"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160mm">
+
+            <com.example.slbappcomm.widgets.CustomRoundAngleImageView
+                android:id="@+id/iv_provider3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/animation_img1"
+                app:left_bottom_radius="0mm"
+                app:left_top_radius="10mm"
+                app:right_bottom_radius="0mm"
+                app:right_top_radius="10mm" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_bktt1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2mm"-->
+            <!--android:src="@drawable/slb_bktt_icon"-->
+            <!--android:visibility="gone"-->
+            <!--tools:visibility="visible" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.geek.libglide47.base.GlideImageView
+                    android:id="@+id/iv_bktt1"
+                    android:layout_width="36mm"
+                    android:layout_height="36mm"
+                    android:layout_marginTop="0mm" />
+                <!--android:src="@drawable/slb_bktt_icon"-->
+
+                <com.geek.libglide47.base.GlideImageView
+                    android:id="@+id/iv_bktt2"
+                    android:layout_width="36mm"
+                    android:layout_height="36mm"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0mm"
+                    android:layout_marginRight="0mm" />
+                <!--android:src="@drawable/slb_xm_icon"-->
+
+                <com.geek.libglide47.base.GlideImageView
+                    android:id="@+id/iv_bktt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0mm" />
+
+                <TextView
+                    android:id="@+id/tv_ji11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="4mm"
+                    android:layout_marginBottom="4mm"
+                    android:background="@drawable/btn_lb_tranff"
+                    android:gravity="center"
+                    android:paddingLeft="8mm"
+                    android:paddingTop="2mm"
+                    android:paddingRight="8mm"
+                    android:paddingBottom="2mm"
+                    android:text="16集"
+                    android:textColor="@color/white"
+                    android:textSize="12mm"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <!--android:src="@drawable/slb_vip_icon22"-->
+                <com.geek.libglide47.base.GlideImageView
+                    android:id="@+id/iv_bktt4"
+                    android:layout_width="24mm"
+                    android:layout_height="24mm"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0mm" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <!--<com.geek.libglide47.base.GlideImageView-->
+        <!--android:id="@+id/iv_provider3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="94mm"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/animation_img1"-->
+        <!--app:siv_border_color="@color/white"-->
+        <!--app:siv_border_width="1dp"-->
+        <!--app:siv_pressed_alpha="0.2"-->
+        <!--app:siv_pressed_color="@color/gray"-->
+        <!--app:siv_radius="5dp" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_provider3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/animation_img1" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_provider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8mm"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_666666"
+                android:textSize="16mm" />
+
+            <TextView
+                android:id="@+id/tv_provider31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8mm"
+                android:layout_marginTop="4mm"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color999999"
+                android:textSize="14mm" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

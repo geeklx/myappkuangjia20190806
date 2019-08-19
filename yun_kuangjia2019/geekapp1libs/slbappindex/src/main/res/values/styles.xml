@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--<style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/view_line_color</item>-->
+        <!--<item name="colorPrimaryDark">@color/view_line_color</item>-->
+        <!--<item name="colorAccent">@color/view_line_color</item>-->
+
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowActionBar">false</item>-->
+
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;<item name="android:windowFullscreen">true</item>&ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--&lt;!&ndash;<item name="android:windowDisablePreview">true</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:windowBackground">@color/transparent</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:windowContentOverlay">@null</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/starter</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 适用于开启滑动返回功能的Activity -->
+
+    <!-- 适用于欢迎界面避免第一次进来白屏或黑屏 -->
+
+    <style name="tab_text_size">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SmartRefreshAppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+</resources>

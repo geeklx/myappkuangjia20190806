@@ -51,8 +51,9 @@ android {
         // Cmake
         externalNativeBuild {
             cmake {
-                cppFlags ""
-                abiFilters /*'armeabi',*/ 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                cppFlags "-frtti -fexceptions"
+//                cppFlags ""
+                abiFilters /*'armeabi', */'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
             }
         }
         sourceSets.main {
@@ -60,13 +61,17 @@ android {
             //LOCAL_LDFLAGS += -fuse-ld=bfd
             //jni.srcDirs 'src/main/jni'
             jniLibs.srcDir './../../otherjar'
+//            jniLibs.srcDir(['libs', './../../otherjar'])
+//            jniLibs.srcDir(['libs'])
+//            jniLibs.srcDirs = ['src/main/jni', './../../otherjar']
         }
 
     }
     // CMakeLists.txt
     externalNativeBuild {
         cmake {
-            path "CMakeLists.txt"  //
+//            path "CMakeLists.txt"  //
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
 
@@ -96,14 +101,14 @@ dependencies {
     // common
     implementation project(':baselibrary')
     // yewu
-    implementation project(':geekapp1libs:demolibs1')
+//    implementation project(':geekapp1libs:demolibs1')
     implementation project(':geeklibs:slbappcomm')
-    // implementation project(':geekapp1libs:slbappindex')
-    // implementation project(':geekapp1libs:slbappsplash')
-    // implementation project(':geekapp1libs:slbapplogin')
-    // implementation project(':geekapp1libs:slbappreadbook')
-    // implementation project(':geekapp1libs:slbapplistenbook')
-    // implementation project(':geekapp1libs:slbappusercenter')
+    implementation project(':geekapp1libs:slbappindex')
+    implementation project(':geekapp1libs:slbappsplash')
+    implementation project(':geekapp1libs:slbapplogin')
+    implementation project(':geekapp1libs:slbappreadbook')
+    implementation project(':geekapp1libs:slbapplistenbook')
+    implementation project(':geekapp1libs:slbappusercenter')
 
 }
 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E6F1FF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <!--color_11B5AF-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50mm"
+        android:background="@color/color_4DA3FE"
+        android:fadingEdgeLength="200dp"
+        android:requiresFadingEdge="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50mm"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="30mm"
+                android:layout_height="30mm"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10mm"
+                android:background="@drawable/slb_left_back6"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_center"
+                style="@style/logintop"
+                android:layout_width="160mm"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="20mm" />
+
+            <LinearLayout
+                android:id="@+id/ll_nl2"
+                android:layout_width="100mm"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10mm"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!--<com.yyydjk.library.DropDownMenu-->
+                <!--android:id="@+id/tv_right"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:dddividerColor="@color/gray"-->
+                <!--app:ddmaskColor="@color/mask_color"-->
+                <!--app:ddmenuBackgroundColor="@color/white"-->
+                <!--app:ddmenuMenuHeightPercent="0.5"-->
+                <!--app:ddmenuSelectedIcon="@drawable/arrows_up3"-->
+                <!--app:ddmenuTextSize="12mm"-->
+                <!--app:ddmenuUnselectedIcon="@drawable/arrows_down3"-->
+                <!--app:ddtextSelectedColor="@color/color_CCEEFF"-->
+                <!--app:ddtextUnselectedColor="@color/white"-->
+                <!--app:ddunderlineColor="@color/gray" />-->
+                <!--<com.yyydjk.library.DropDownMenu-->
+                <!--android:id="@+id/tv_right"-->
+                <!--app:ddmenuTextSize="13sp" //tab字体大小-->
+                <!--app:ddtextUnselectedColor="@color/drop_down_unselected" //tab未选中颜色-->
+                <!--app:ddtextSelectedColor="@color/drop_down_selected" //tab选中颜色-->
+                <!--app:dddividerColor="@color/gray"    //分割线颜色-->
+                <!--app:ddunderlineColor="@color/gray"  //下划线颜色-->
+                <!--app:ddmenuSelectedIcon="@mipmap/drop_down_selected_icon" //tab选中状态图标-->
+                <!--app:ddmenuUnselectedIcon="@mipmap/drop_down_unselected_icon"//tab未选中状态图标-->
+                <!--app:ddmaskColor="@color/mask_color"     //遮罩颜色，一般是半透明-->
+                <!--app:ddmenuBackgroundColor="@color/white" //tab 背景颜色-->
+                <!--app:ddmenuMenuHeightPercent="0.5" 菜单的最大高度，根据屏幕高度的百分比设置-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30mm"
+                    android:drawableRight="@drawable/arrows_down3"
+                    android:drawablePadding="4mm"
+                    android:gravity="center_vertical"
+                    android:text="全部年龄"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/smart_header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_srlBackgroundColor="@color/color_E6F1FF"
+            app:srlAccentColor="@color/color_4DA3FE"
+            app:srlPrimaryColor="@color/color_E6F1FF" />
+
+        <com.example.slbappcomm.widgets.recyclerviewnice.XRecyclerView
+            android:id="@+id/recycler_view0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4mm"
+            android:layout_marginTop="0mm"
+            android:layout_marginRight="4mm" />
+        <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+            <!--android:id="@+id/smart_footer1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_srlBackgroundColor="@color/color_E6F1FF"-->
+            <!--app:srlAccentColor="@color/white"-->
+            <!--app:srlPrimaryColor="@color/color_E6F1FF" />-->
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

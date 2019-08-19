@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E6F1FF">
+    <!--color_F5F5F5-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible">
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250mm"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/me_bg"-->
+            <!--android:visibility="visible" />-->
+
+            <ImageView
+                android:id="@+id/parallax"
+                android:layout_width="match_parent"
+                android:layout_height="500mm"
+                android:layout_marginTop="-230mm"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slb_activity_mqh_fragment4_bg"
+                app:layout_collapseMode="parallax" />
+
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0mm"
+            app:srlEnablePreviewInEditMode="false">
+            <!--app:srlDragRate="0.7"-->
+            <!--app:srlEnablePreviewInEditMode="true"-->
+            <!--app:srlHeaderHeight="200mm"-->
+            <!--app:srlHeaderMaxDragRate="1.3"-->
+            <!--app:srlHeaderTriggerRate="0.5"-->
+            <!--android:layout_marginTop="?attr/actionBarSize"-->
+
+            <!--<pl.droidsonroids.gif.GifImageView-->
+                <!--android:id="@+id/gifview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/gif_header_repast"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_srlBackgroundColor="@android:color/transparent"-->
+                <!--app:layout_srlSpinnerStyle="Scale" />-->
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:id="@+id/smart_header1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10mm"
+                android:visibility="visible"
+                app:srlAccentColor="@color/color_4DA3FE" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--@color/color_EDEBE9-->
+                        <com.google.android.material.appbar.CollapsingToolbarLayout
+                            android:id="@+id/collapse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            app:contentScrim="?attr/colorPrimary"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                            app:titleEnabled="false"
+                            tools:visibility="visible">
+
+                            <include layout="@layout/activity_fragment4_content_new2" />
+
+                        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0mm"
+                            android:orientation="vertical"
+                            android:paddingBottom="0dp"
+                            app:layout_scrollFlags="scroll">
+
+                            <LinearLayout
+                                android:id="@+id/ll_lottie"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:id="@+id/animation_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_fileName="lottie/delivery_van.json"
+                                    app:lottie_loop="true" />
+                            </LinearLayout>
+                            <!--android:background="@drawable/img00"-->
+                            <include layout="@layout/activity_fragment4_content2new2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0mm"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <Button
+                                    android:id="@+id/btn_sure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40mm"
+                                    android:layout_margin="60mm"
+                                    android:background="@drawable/slb_my_btn_sure"
+                                    android:text="退出登录"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="16mm" />
+
+                                <Button
+                                    android:id="@+id/btn_cancel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40mm"
+                                    android:layout_margin="60mm"
+                                    android:background="@drawable/slb_my_btn_cancel"
+                                    android:text="关闭应用"
+                                    android:textSize="16mm"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/SmartRefreshAppTheme.Toolbar"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:layout_collapseMode="pin"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.appcompat.widget.ButtonBarLayout
+                android:id="@+id/buttonBarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.haier.cellarette.baselibrary.widget.CircleImageView
+                    android:id="@+id/toolbar_avatar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="10mm"
+                    android:layout_marginRight="10mm"
+                    android:src="@drawable/slb_logo"
+                    app:civ_border_color="@android:color/white"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="2mm" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="一醉方休"
+                    android:textSize="16sp" />
+            </androidx.appcompat.widget.ButtonBarLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

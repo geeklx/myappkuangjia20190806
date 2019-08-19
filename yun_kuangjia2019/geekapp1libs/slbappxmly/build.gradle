@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+//apply from: '../../mobsdk.gradle'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+android {
+    defaultConfig {
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters /*"armeabi",*/ "armeabi-v7a"/*, "x86"*/
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+//            jniLibs.srcDir '../../otherjar'
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':baselibrary')
+    implementation librarys.glide47
+    implementation project(':geekcommonlibs:libglide47')
+    implementation project(':geeklibs:slbappcomm')
+
+    //jar aar
+    // api files('../../otherjar/alipaySdk-20180403.jar')
+
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+
+}

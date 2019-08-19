@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="14mm"
+    android:paddingRight="14mm">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18mm">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="16mm"
+            app:cardElevation="4mm"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="17mm"
+        android:paddingRight="10mm"
+        android:paddingBottom="20mm">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70mm">
+
+            <com.geek.libglide47.base.GlideImageView
+                android:id="@+id/iv_head"
+                android:layout_width="70mm"
+                android:layout_height="70mm"
+                android:scaleType="centerCrop"
+                android:src="@drawable/head_moren2"
+                app:siv_border_color="@color/white"
+                app:siv_border_width="4mm"
+                app:siv_pressed_alpha="0.3"
+                app:siv_pressed_color="@color/white"
+                app:siv_shape_type="circle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10mm"
+                android:layout_marginTop="40mm"
+                android:layout_toRightOf="@+id/iv_head"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/WrapWrap"
+                    android:ellipsize="none"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:text="访客"
+                    android:textColor="@color/color_40"
+                    android:textSize="18mm"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="10mm"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/color_40"
+                    android:textSize="14mm"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_jinbi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/WrapWrap"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="50mm"
+                        android:src="@drawable/slb_activity_mqh_fragment4_coin" />
+
+                    <TextView
+                        android:id="@+id/tv_coin"
+                        style="@style/WrapWrap"
+                        android:layout_marginLeft="7mm"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/color_40"
+                        android:textSize="13mm"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_to_chongwu"
+                android:layout_width="wrap_content"
+                android:layout_height="37mm"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/slb_activity_mqh_fragment4_chongwu"
+                android:visibility="gone" />
+
+            <com.haier.cellarette.baselibrary.shuaxinviewanimation.ShimmerLayout
+                android:id="@+id/shimmer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10mm"
+                app:shimmer_animation_duration="2200"
+                app:shimmer_auto_start="true"
+                app:shimmer_color="#FFE7B6">
+
+                <LinearLayout
+                    android:id="@+id/ll_medal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36mm"
+                    android:background="@drawable/shape_bg_medal_count"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12mm"
+                    android:paddingRight="16mm">
+
+                    <ImageView
+                        android:layout_width="31mm"
+                        android:layout_height="36mm"
+                        android:layout_marginRight="6mm"
+                        android:src="@drawable/icon_medal" />
+
+                    <TextView
+                        android:id="@+id/medalCountTv"
+                        style="@style/WrapWrap"
+                        android:text="0"
+                        android:textColor="#815738 "
+                        android:textSize="20mm" />
+                </LinearLayout>
+            </com.haier.cellarette.baselibrary.shuaxinviewanimation.ShimmerLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12mm"
+                android:gravity="bottom">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="阅读本数"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12mm" />
+
+                <TextView
+                    android:id="@+id/tv_readcount"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="10mm"
+                    android:text="0"
+                    android:textColor="@color/color_40"
+                    android:textSize="18mm"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="29mm"
+                    android:text="累计阅读"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12mm" />
+
+                <TextView
+                    android:id="@+id/tv_readhours"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="10mm"
+                    android:text="0"
+                    android:textColor="@color/color_40"
+                    android:textSize="18mm"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_jihuoma"
+                android:layout_width="wrap_content"
+                android:layout_height="43mm"
+                android:layout_marginTop="14mm"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_vip1"
+                    android:layout_width="182mm"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_bg_medal_count"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="20mm"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6mm"
+                        android:src="@drawable/slb_activity_mqh_fragment4_vip_new" />
+
+                    <TextView
+                        android:id="@+id/tv_vipEndDate"
+                        style="@style/WrapWrap"
+                        android:layout_marginLeft="14mm"
+                        android:layout_marginTop="12mm"
+                        android:layout_marginRight="10mm"
+                        android:text="2019-01-12到期"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14mm" />
+
+                    <ImageView
+                        android:layout_width="12mm"
+                        android:layout_height="12mm"
+                        android:layout_marginTop="14mm"
+                        android:src="@drawable/slb_right_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_paopao1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-12mm"
+                    android:src="@drawable/slb_activity_mqh_fragment4_jihuoma" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

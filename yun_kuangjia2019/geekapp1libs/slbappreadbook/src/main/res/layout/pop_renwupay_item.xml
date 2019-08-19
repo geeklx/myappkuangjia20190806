@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6mm"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingRight="20mm">
+
+    <LinearLayout
+        android:layout_width="50mm"
+        android:layout_height="50mm"
+        android:background="@drawable/slb_readbook_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv1"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:src="@drawable/head_moren3"
+            app:siv_border_color="@color/white"
+            app:siv_border_width="0mm"
+            app:siv_pressed_alpha="0.5"
+            app:siv_pressed_color="@color/white_alpha30"
+            app:siv_radius="12mm" />
+        <!--app:siv_shape_type="rectangle"-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30mm">
+
+        <TextView
+            android:id="@+id/tvx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10mm"
+            android:layout_marginBottom="4mm"
+            android:text="X"
+            android:textColor="@color/color_333333"
+            android:textSize="14mm" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvx1"
+            android:text="50"
+            android:textColor="@color/color_333333"
+            android:textSize="20mm" />
+    </RelativeLayout>
+
+</LinearLayout>

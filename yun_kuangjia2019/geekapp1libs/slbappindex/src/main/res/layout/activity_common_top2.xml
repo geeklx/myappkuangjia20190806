@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50mm"
+    android:background="@color/color_4DA3FE"
+    android:fadingEdgeLength="200dp"
+    android:requiresFadingEdge="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50mm"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="30mm"
+            android:layout_height="30mm"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10mm"
+            android:background="@drawable/slb_left_back6"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_center"
+            style="@style/logintop"
+            android:layout_width="160mm"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="练习"
+            android:textColor="@color/white"
+            android:textSize="20mm" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

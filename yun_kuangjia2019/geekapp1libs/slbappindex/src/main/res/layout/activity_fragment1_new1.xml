@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slb_activity_mqh_fragment4_bg"
+    android:orientation="vertical">
+
+    <!--搜索-->
+    <LinearLayout
+        android:id="@+id/llbg4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0mm"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <include layout="@layout/activity_search_comm_new1" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/refreshLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50mm"
+        app:srlEnablePreviewInEditMode="false">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/smart_header22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10mm"
+            app:layout_srlBackgroundColor="@color/color_4DA3FE"
+            app:srlAccentColor="@color/white"
+            app:srlPrimaryColor="@color/color_4DA3FE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scroll_view22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                    tools:visibility="visible">
+                    <!--中-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.haier.cellarette.baselibrary.bannerviewquan.LXBannerView
+                            android:id="@+id/banner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="162mm"
+                            android:layout_marginTop="14mm"
+                            app:canLoop="true"
+                            app:indicatorAlign="center"
+                            app:indicatorPaddingLeft="10mm"
+                            app:middle_page_cover="false"
+                            app:open_mz_mode="true"
+                            app:outside_bottom="false" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0mm"
+                            android:layout_marginTop="6mm"
+                            android:layout_marginRight="0mm"
+                            android:orientation="vertical">
+                            <!--android:background="@drawable/huiben_card3"110mm-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="0mm"
+                                android:layout_marginTop="10mm"
+                                android:layout_marginRight="0mm"
+                                android:layout_marginBottom="0mm">
+
+                                <com.example.slbappcomm.widgets.recyclerviewnice.XRecyclerView
+                                    android:id="@+id/recycler_view0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="0mm"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/logincommtextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20mm"
+                                android:text="新品推荐" />
+
+                            <com.haier.cellarette.baselibrary.bannerviewquan.LXBannerView
+                                android:id="@+id/banner2"
+                                android:layout_width="match_parent"
+                                android:layout_height="180mm"
+                                app:canLoop="true"
+                                app:indicatorAlign="center"
+                                app:indicatorPaddingLeft="10mm"
+                                app:middle_page_cover="true"
+                                app:open_mz_mode="true"
+                                app:outside_bottom="false" />
+                        </LinearLayout>
+
+                        <com.example.slbappcomm.widgets.recyclerviewnice.XRecyclerView
+                            android:id="@+id/recycler_view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6mm"
+                            android:layout_marginRight="6mm"
+                            android:layout_marginBottom="20mm" />
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <com.haier.cellarette.baselibrary.emptyview.EmptyView
+                    android:id="@+id/emptyview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:errornet_layout="@layout/activity_network_errnet"
+                    app:loading_layout="@layout/activity_network_loading"
+                    app:nodata_layout="@layout/activity_network_nodata"
+                    app:unreachable_layout="@layout/activity_network_errnet" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

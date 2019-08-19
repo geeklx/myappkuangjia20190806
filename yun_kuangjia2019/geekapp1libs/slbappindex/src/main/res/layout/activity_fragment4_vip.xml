@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="230mm"
+        android:background="#E5C07C" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50mm"
+        android:layout_marginTop="30mm">
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="30mm"
+            android:layout_height="30mm"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10mm"
+            android:background="@drawable/slb_left_back6"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_center"
+            style="@style/logintop"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20mm" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:layout_marginBottom="40mm"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20mm"
+                    android:text="VIP会员"
+                    android:textColor="@color/white"
+                    android:textSize="22mm"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60mm"
+                    android:layout_marginLeft="20mm"
+                    android:layout_marginTop="10mm"
+                    android:layout_marginRight="20mm"
+                    android:layout_marginBottom="0mm"
+                    android:orientation="horizontal">
+
+                    <com.geek.libglide47.base.GlideImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="60mm"
+                        android:layout_height="60mm"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/head_moren2"
+                        app:siv_border_color="@color/white"
+                        app:siv_border_width="3mm"
+                        app:siv_pressed_alpha="0.3"
+                        app:siv_pressed_color="@color/white_alpha30"
+                        app:siv_shape_type="circle" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60mm"
+                        android:layout_marginLeft="20mm">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_login1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            tools:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv1_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="登录后查看会员特权"
+                                android:textColor="@color/white"
+                                android:textSize="16mm" />
+
+                            <TextView
+                                android:id="@+id/tv2_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10mm"
+                                android:layout_toRightOf="@+id/tv1_login"
+                                android:background="@drawable/shape_bg_vip_login1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="12mm"
+                                android:paddingTop="4mm"
+                                android:paddingRight="12mm"
+                                android:paddingBottom="4mm"
+                                android:text="登录"
+                                android:textColor="@color/colorE5C080"
+                                android:textSize="12mm" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_login2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="测试"
+                                android:textColor="@color/white"
+                                android:textSize="16mm" />
+
+                            <TextView
+                                android:id="@+id/tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20mm"
+                                android:layout_marginTop="4mm"
+                                android:layout_toRightOf="@+id/tv1"
+                                android:drawableLeft="@drawable/slb_no_vip_date"
+                                android:drawablePadding="4mm"
+                                android:gravity="center_vertical"
+                                android:text="未开通"
+                                android:textColor="@color/white"
+                                android:textSize="12mm" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="成为合象会员，海量资源免费听读"
+                            android:textColor="@color/white"
+                            android:textSize="12mm" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.haier.cellarette.baselibrary.emptyview.EmptyView
+                android:id="@+id/emptyview1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4mm"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:errornet_layout="@layout/activity_network_errnet"
+                app:loading_layout="@layout/activity_network_loading"
+                app:nodata_layout="@layout/activity_network_nodata"
+                app:unreachable_layout="@layout/activity_network_errnet" />
+
+            <RelativeLayout
+                android:id="@+id/rl11"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="36mm"
+                android:layout_weight="1"
+                android:background="@drawable/btn_lb_vip">
+
+                <LinearLayout
+                    android:id="@+id/ll123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10mm"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="0mm"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14mm"
+                            android:layout_marginTop="0mm"
+                            android:layout_marginRight="20mm"
+                            android:text="VIP会员套餐"
+                            android:textColor="@color/black_000"
+                            android:textSize="22mm" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4mm"
+                            android:layout_marginBottom="10mm" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/iv123"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/slb_vipcode_bg"-->
+                    <!--android:visibility="visible"-->
+                    <!--tools:visibility="visible" />-->
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll123"
+                    android:layout_marginTop="-550mm"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/slb_vipcode_bg"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_url1"
+        android:layout_width="wrap_content"
+        android:layout_height="40mm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="查看会员服务规则  >"
+        android:textColor="@color/color999999"
+        android:textSize="12mm" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8mm"
+    android:background="@drawable/slb_order_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.slbappcomm.widgets.CustomRoundAngleImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="120mm"
+            android:scaleType="centerCrop"
+            android:src="@drawable/animation_img1"
+            app:left_bottom_radius="0mm"
+            app:left_top_radius="10mm"
+            app:right_bottom_radius="0mm"
+            app:right_top_radius="10mm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20mm"
+            android:layout_marginTop="4mm"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="测试"
+                android:textColor="@color/white"
+                android:textSize="20mm" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4mm"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="测试"
+                android:textColor="@color/white"
+                android:textSize="16mm" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10mm">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_000"
+            android:textSize="20mm" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4mm"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="测试"
+            android:textColor="@color/black"
+            android:textSize="16mm" />
+    </RelativeLayout>
+
+
+</LinearLayout>

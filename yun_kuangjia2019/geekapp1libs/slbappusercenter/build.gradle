@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+//apply from: '../../mobsdk.gradle'
+apply from: './../../commonlibsyewu.gradle'
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':baselibrary')
+    implementation librarys.glide47
+    implementation project(':geekcommonlibs:libglide47')
+    implementation project(':geeklibs:slbappcomm')
+
+    //jar aar
+    // api files('../../otherjar/alipaySdk-20180403.jar')
+
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+    /**rep*/implementation (name:'biz3slbappcomm_bxnt_nation', ext:'aar')
+
+}

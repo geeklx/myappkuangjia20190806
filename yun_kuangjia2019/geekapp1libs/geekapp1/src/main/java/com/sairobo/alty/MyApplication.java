@@ -92,6 +92,13 @@ public class MyApplication extends MultiDexApplication {
         configUmengTongji();
         // 为了横屏需求的toast
         ToastUtils.init(this);
+        // ndk
+        configNDK();
+    }
+
+    private void configNDK() {
+        JNIUtils jniUtils = new JNIUtils();
+        MyLogUtil.e("--JNIUtils--", jniUtils.stringFromJNI());
     }
 
     private void configTinker() {
