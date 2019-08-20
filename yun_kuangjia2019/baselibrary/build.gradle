@@ -56,5 +56,7 @@ dependencies {
     api 'org.greenrobot:eventbus:3.1.1'
     // walle
     api 'com.meituan.android.walle:library:1.1.6'
+    // mmkv
+    api 'com.tencent:mmkv:1.0.22'
 
 }

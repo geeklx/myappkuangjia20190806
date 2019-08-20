@@ -19,6 +19,7 @@ import com.example.shining.libglin.net.Net;
 import com.example.slbappcomm.broadcastreceiver.PhoneService;
 import com.example.slbappcomm.utils.BanbenCommonUtils;
 import com.haier.cellarette.baselibrary.changelanguage.LocalManageUtil;
+import com.haier.cellarette.baselibrary.mmkv.MmkvUtils;
 import com.haier.cellarette.libretrofit.RetrofitNetNew;
 import com.haier.cellarette.libutils.utilslib.app.MyLogUtil;
 import com.haier.cellarette.libwebview.hois2.HiosHelper;
@@ -94,6 +95,13 @@ public class MyApplication extends MultiDexApplication {
         ToastUtils.init(this);
         // ndk
         configNDK();
+        // mmkv
+        configmmkv();
+    }
+
+    private void configmmkv() {
+        MmkvUtils.getInstance(this).get("");
+        MmkvUtils.getInstance(this).get_demo();
     }
 
     private void configNDK() {
@@ -155,6 +163,7 @@ public class MyApplication extends MultiDexApplication {
         };
     }
 
+    @Override
     protected void attachBaseContext(Context base) {
         //保存系统选择语言
         LocalManageUtil.saveSystemCurrentLanguage(base);

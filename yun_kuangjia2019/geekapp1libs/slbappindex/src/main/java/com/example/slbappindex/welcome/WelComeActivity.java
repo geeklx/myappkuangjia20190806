@@ -8,6 +8,7 @@ import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 
+import com.alibaba.fastjson.JSON;
 import com.blankj.utilcode.util.SPUtils;
 import com.blankj.utilcode.util.ServiceUtils;
 import com.example.biz3slbappusercenter.bean.SConfigureBean;
@@ -24,8 +25,10 @@ import com.example.slbappcomm.base.SlbBaseActivity;
 import com.example.slbappcomm.nativendk.JNIUtils2;
 import com.example.slbappcomm.nativendk.KeyReflectUtils;
 import com.example.slbappindex.R;
+import com.example.slbappindex.domain.Biaoge_listBean;
 import com.geek.libglide47.demo.commonutil.AppUtil;
 import com.haier.cellarette.baselibrary.assetsfitandroid.fileassets.GetAssetsFileMP3TXTJSONAPKUtil;
+import com.haier.cellarette.baselibrary.mmkv.MmkvUtils;
 import com.haier.cellarette.baselibrary.zothers.NavigationBarUtil;
 import com.haier.cellarette.libutils.utilslib.app.MobileUtils;
 import com.haier.cellarette.libutils.utilslib.app.MyLogUtil;
